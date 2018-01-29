@@ -1,5 +1,5 @@
 def prime?(integer)
-  range = (nil, nil, *2..integer).to_a
+  range = [nil, nil, *2..integer]
   divisors = (2..Math.sqrt(integer)).to_a
 
   range.each {|num| print "#{num}, "}
