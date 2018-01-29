@@ -1,4 +1,7 @@
 def prime?(integer)
+  if integer < 0
+    return false
+  end
   range = [nil, nil, *2..integer]
 
   range.each {|num| print "#{num}, "}
@@ -8,8 +11,6 @@ def prime?(integer)
   end
   range.compact
   range.each {|num| print "#{num}, "}
-  ##prime.each {|num| print "P#{num} "}
-  ##not_prime.each {|num| print "NP#{num} "}
   if range.include?(integer) == true
     true
   else
