@@ -1,8 +1,8 @@
 def prime?(integer)
   range = [nil, nil, *2..integer]
-  
+
   range.each {|num| print "#{num}, "}
-  
+
   (2..Math.sqrt(integer)).each do |num|
     (num**2..integer).step(num){|place| range[place] = nil} if range[num]
   end
