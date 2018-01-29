@@ -9,7 +9,7 @@ def prime?(integer)
     (num**2..integer).step(1){|place| range[place] = nil} if range[num]
   end
   range.compact
-
+  range.each {|num| print "#{num}, "}
   ##prime.each {|num| print "P#{num} "}
   ##not_prime.each {|num| print "NP#{num} "}
   if range.include?(integer) == true
