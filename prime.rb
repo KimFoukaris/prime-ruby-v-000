@@ -18,7 +18,7 @@ def prime?(integer)
 
   #print to test
   #range.each {|num| print "#{num}, "}
-  
+
   if range.include?(integer) == true
     true
   else
